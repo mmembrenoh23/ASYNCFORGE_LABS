@@ -32,12 +32,18 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#productos" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Mis Plugins</a>
-                        <a href="#servicios" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Servicios</a>
-                        <a href="#sobre-mi" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Sobre Mí</a>
-                        <a href="#contacto" class="bg-brandAccent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-500/20">Cotizar Proyecto</a>
+                        <a data-i18n="nav-plugins" href="#productos" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Mis Plugins</a>
+                        <a data-i18n="nav-services" href="#servicios" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Servicios</a>
+                        <a data-i18n="nav-about" href="#sobre-mi" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Sobre Mí</a>
+                        <a data-i18n="nav-quote" href="#contacto" class="bg-brandAccent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-500/20">Cotizar Proyecto</a>
                     </div>
                 </div>
+                <div class="flex items-center gap-4">
+                <button id="lang-switcher" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors cursor-pointer">
+                    <span id="lang-flag">🇺🇸</span>
+                    <span id="lang-text">English</span>
+                </button>
+            </div>
             </div>
         </div>
     </nav>
@@ -45,20 +51,20 @@
     <!-- HERO SECTION -->
     <header class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-brandAccent border border-blue-500/20 mb-4 animate-pulse">
+            <span data-i18n="hero-badge" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-brandAccent border border-blue-500/20 mb-4 animate-pulse">
                 Backend Architecture & Optimization
             </span>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+            <h1 data-i18n="hero-title" class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
                 Infraestructura Web de Alto Rendimiento y <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess">Plugins a Medida</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+            <p data-i18n="hero-subtitle" class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
                 No diseño plantillas genéricas. Construyo motores de automatización robustos, optimizo bases de datos y desarrollo extensiones WooCommerce escalables para negocios que no pueden permitirse fallas.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#productos" class="bg-white text-brandDark hover:bg-gray-100 font-semibold px-8 py-3 rounded-xl transition shadow-xl text-center">
+                <a data-i18n="btn-explore" href="#productos" class="bg-white text-brandDark hover:bg-gray-100 font-semibold px-8 py-3 rounded-xl transition shadow-xl text-center">
                     Explorar Plugins Pro
                 </a>
-                <a href="#contacto" class="bg-gray-800/80 text-gray-200 hover:bg-gray-800 hover:text-white font-semibold px-8 py-3 rounded-xl border border-gray-700 transition text-center">
+                <a data-i18n="hero-cta" href="#contacto" class="bg-gray-800/80 text-gray-200 hover:bg-gray-800 hover:text-white font-semibold px-8 py-3 rounded-xl border border-gray-700 transition text-center">
                     Hablemos de tu Proyecto
                 </a>
             </div>
@@ -71,8 +77,8 @@
     <section id="productos" class="py-20 bg-gray-900/40 border-t border-gray-800/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4">Soluciones Disponibles para WooCommerce</h2>
-                <p class="text-gray-400 max-w-xl mx-auto">Herramientas profesionales optimizadas a nivel de base de datos para resolver problemas críticos de rendimiento.</p>
+                <h2 data-i18n="section-products-title"  class="text-3xl font-bold text-white mb-4">Soluciones Disponibles para WooCommerce</h2>
+                <p data-i18n="section-products-desc"  class="text-gray-400 max-w-xl mx-auto">Herramientas profesionales optimizadas a nivel de base de datos para resolver problemas críticos de rendimiento.</p>
             </div>
 
             <!-- Grid de Plugins -->
@@ -111,7 +117,7 @@
                                   <text x="0" y="80" fill="#3b82f6" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">WOOCOMMERCE EXTENSION</text>
                                   
                                   <!-- Nombre del Plugin -->
-                                  <text x="0" y="130" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="0.5">
+                                  <text  x="0" y="130" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="0.5">
                                     Bulk Importer <tspan fill="#10b981">Pro</tspan>
                                   </text>
                                   
@@ -149,19 +155,19 @@
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-white">Bulk Importer Pro</h3>
-                            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-brandSuccess border border-emerald-500/20">Licencia Comercial</span>
+                            <h3  data-i18n="card-title-bulk" class="text-xl font-bold text-white">Bulk Importer Pro</h3>
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-brandSuccess border border-emerald-500/20"  data-i18n="card-license" >Licencia Comercial</span>
                         </div>
-                        <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        <p  data-i18n="card-desc-bulk"  class="text-gray-400 text-sm mb-6 flex-grow">
                             Motor de importación asíncrono estructurado secuencialmente en dos fases principales: Pre-loader global de atributos de catálogo y carga masiva optimizada. Evita de raíz la duplicación de slugs y la saturación de memoria en WooCommerce.
                         </p>
                         <div class="pt-4 border-t border-gray-800 flex items-center justify-between mt-auto">
                             <div>
-                                <span class="text-xs text-gray-500 block">Pago único</span>
+                                <span  data-i18n="payment-one-time" class="text-xs text-gray-500 block">Pago único</span>
                                 <span class="text-2xl font-extrabold text-white">$39<span class="text-sm font-normal text-gray-400">.99</span></span>
                             </div>
                             <!-- URL de pago (Stripe, Lemon Squeezy, PayPal) -->
-                            <a href="https://membreo.gumroad.com/l/gbxsu" target="_blank" class="bg-brandSuccess hover:bg-emerald-600 text-brandDark font-bold px-5 py-2.5 rounded-xl text-sm transition">
+                            <a  data-i18n="btn-buy" href="https://membreo.gumroad.com/l/gbxsu" target="_blank" class="bg-brandSuccess hover:bg-emerald-600 text-brandDark font-bold px-5 py-2.5 rounded-xl text-sm transition">
                                 Adquirir Plugin Pro
                             </a>
                         </div>
@@ -171,15 +177,15 @@
                 <!-- CARD PROVISIONAL: Plugin Extra o Próximo Lanzamiento -->
                 <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden p-6 flex flex-col h-full justify-between opacity-60 relative group">
                     <div class="absolute inset-0 bg-gray-950/40 rounded-2xl flex items-center justify-center">
-                        <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Próximamente</span>
+                        <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider"  data-i18n="card-status-coming">Próximamente</span>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-400 mb-2">Custom API Rest Sync</h3>
-                        <p class="text-gray-500 text-sm">Sincronizador avanzado bidireccional entre inventarios externos y la base de datos nativa de WordPress de manera automatizada.</p>
+                        <h3 class="text-xl font-bold text-gray-400 mb-2"  data-i18n="card-title-sync">Custom API Rest Sync</h3>
+                        <p class="text-gray-500 text-sm"  data-i18n="card-desc-sync">Sincronizador avanzado bidireccional entre inventarios externos y la base de datos nativa de WordPress de manera automatizada.</p>
                     </div>
                     <div class="pt-4 border-t border-gray-800 flex items-center justify-between mt-12">
                         <span class="text-gray-600 font-bold">$ --.--</span>
-                        <button disabled class="bg-gray-800 text-gray-600 font-bold px-5 py-2.5 rounded-xl text-sm cursor-not-allowed">Inactivo</button>
+                        <button disabled class="bg-gray-800 text-gray-600 font-bold px-5 py-2.5 rounded-xl text-sm cursor-not-allowed"  data-i18n="btn-inactive">Inactivo</button>
                     </div>
                 </div>
 
@@ -192,29 +198,29 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 <div class="lg:col-span-1">
-                    <h2 class="text-3xl font-bold text-white mb-4 sticky top-24">Soluciones de Ingeniería Backend a la Medida</h2>
-                    <p class="text-gray-400 text-sm">Ayudo a empresas, agencias y tiendas online a estructurar software rápido, seguro y libre de cuellos de botella.</p>
+                    <h2 class="text-3xl font-bold text-white mb-4 sticky top-24"  data-i18n="section-services-title">Soluciones de Ingeniería Backend a la Medida</h2>
+                    <p class="text-gray-400 text-sm"  data-i18n="section-services-desc">Ayudo a empresas, agencias y tiendas online a estructurar software rápido, seguro y libre de cuellos de botella.</p>
                 </div>
                 <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="bg-gray-900/60 p-6 rounded-xl border border-gray-800/80">
                         <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-brandAccent mb-4 font-mono font-bold">&lt;/&gt;</div>
-                        <h3 class="text-lg font-bold text-white mb-2">Desarrollo PHP &amp; Laravel</h3>
-                        <p class="text-gray-400 text-sm">Estructuración de backends lógicos, APIs robustas y refactorización profunda de sistemas de traducción o migración de datos.</p>
+                        <h3 class="text-lg font-bold text-white mb-2" data-i18n="service-php">Desarrollo PHP &amp; Laravel</h3>
+                        <p class="text-gray-400 text-sm" data-i18n="service-php-desc">Estructuración de backends lógicos, APIs robustas y refactorización profunda de sistemas de traducción o migración de datos.</p>
                     </div>
                     <div class="bg-gray-900/60 p-6 rounded-xl border border-gray-800/80">
                         <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-brandSuccess mb-4 font-mono font-bold">DB</div>
-                        <h3 class="text-lg font-bold text-white mb-2">Optimización MySQL</h3>
-                        <p class="text-gray-400 text-sm">Consultas SQL eficientes, indexación correcta y solución definitiva a bloqueos de tablas por sobrecarga de datos concurrentes.</p>
+                        <h3 class="text-lg font-bold text-white mb-2" data-i18n="service-mysql">Optimización MySQL</h3>
+                        <p class="text-gray-400 text-sm" data-i18n="service-mysql-desc">Consultas SQL eficientes, indexación correcta y solución definitiva a bloqueos de tablas por sobrecarga de datos concurrentes.</p>
                     </div>
                     <div class="bg-gray-900/60 p-6 rounded-xl border border-gray-800/80">
                         <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 font-mono font-bold">WP</div>
-                        <h3 class="text-lg font-bold text-white mb-2">Plugins y Core WP</h3>
-                        <p class="text-gray-400 text-sm">Arquitectura limpia de plugins privados o públicos siguiendo estrictamente los estándares oficiales de seguridad de WordPress.</p>
+                        <h3 class="text-lg font-bold text-white mb-2"data-i18n="service-wp">Plugins y Core WP</h3>
+                        <p class="text-gray-400 text-sm" data-i18n="service-wp-desc">Arquitectura limpia de plugins privados o públicos siguiendo estrictamente los estándares oficiales de seguridad de WordPress.</p>
                     </div>
                     <div class="bg-gray-900/60 p-6 rounded-xl border border-gray-800/80">
                         <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 mb-4 font-mono font-bold">JS</div>
-                        <h3 class="text-lg font-bold text-white mb-2">Frontend Moderno</h3>
-                        <p class="text-gray-400 text-sm">Integración fluida con entornos ágiles como Vite para garantizar que el panel de administración responda al instante.</p>
+                        <h3 class="text-lg font-bold text-white mb-2" data-i18n="service-js">Frontend Moderno</h3>
+                        <p class="text-gray-400 text-sm" data-i18n="service-js-desc">Integración fluida con entornos ágiles como Vite para garantizar que el panel de administración responda al instante.</p>
                     </div>
                 </div>
             </div>
@@ -224,12 +230,11 @@
     <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobre-mi" class="py-20 bg-gray-900/30 border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Detrás del Código</h2>
-            <p class="text-gray-300 text-base leading-relaxed mb-6">
-                ¡Hola! Soy Maria Membreño, desarrolladora backend especializada en el ecosistema PHP, Laravel y arquitecturas para tiendas virtuales masivas. Fundé AsyncForge Labs con un objetivo claro: forjar herramientas de software optimizadas que resuelvan problemas reales de rendimiento y automatización.
-            </p class="text-gray-400 text-sm">
-            <p>Mi enfoque principal está en la optimización de procesos asíncronos y la migración limpia de datos críticos. Cuando adquieres uno de mis plugins o contratas mis servicios, trabajas directamente conmigo, garantizándote código estructurado, seguro y pensado para producción.</p>
-            <p class="text-gray-400 text-sm">
+            <h2 class="text-2xl font-bold text-white mb-6" data-i18n="section-about-title">Detrás del Código</h2>
+            <p class="text-gray-300 text-base leading-relaxed mb-6" data-i18n="section-about-p1">
+                Soy desarrolladora backend especializada en el ecosistema PHP, Laravel y arquitecturas para sistemas de gestión de contenidos y tiendas virtuales masivas. Mi enfoque principal está en la optimización de procesos asíncronos y la migración limpia de datos críticos.
+            </p>
+            <p class="text-gray-400 text-sm" data-i18n="section-about-p2">
                 Diseño soluciones lógicas pensadas para durar, eliminando las dependencias pesadas innecesarias y priorizando siempre la estabilidad en entornos de producción.
             </p>
         </div>
@@ -238,31 +243,31 @@
     <!-- FORMULARIO DE CONTACTO -->
     <section id="contacto" class="py-20 max-w-xl mx-auto px-4"> 
         <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-2xl">
-            <h2 class="text-2xl font-bold text-white text-center mb-2">¿Tienes un proyecto en mente?</h2>
-            <p class="text-gray-400 text-sm text-center mb-8">Cuéntame qué integración, plugin o sitio web de alta velocidad necesitas desarrollar.</p>
+            <h2 class="text-2xl font-bold text-white text-center mb-2"  data-i18n="contact-title">¿Tienes un proyecto en mente?</h2>
+            <p class="text-gray-400 text-sm text-center mb-8" data-i18n="contact-desc">Cuéntame qué integración, plugin o sitio web de alta velocidad necesitas desarrollar.</p>
             
             <!-- FORMULARIO DE CONTACTO CON CONEXIÓN A FORMSPREE -->
             <form action="https://formspree.io/f/mzdqzkpl" method="POST" class="space-y-5">
                 <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Nombre Completo</label>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2" data-i18n="form-name">Nombre Completo</label>
                     <!-- El atributo name="name" es indispensable para que te llegue el dato -->
                     <input type="text" name="name" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brandAccent transition">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Correo Electrónico</label>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2" data-i18n="form-email">Correo Electrónico</label>
                     <!-- El atributo name="email" define el remitente -->
                     <input type="email" name="email" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brandAccent transition">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Detalles del Requerimiento</label>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2" data-i18n="form-details">Detalles del Requerimiento</label>
                     <!-- El atributo name="message" guarda el cuerpo del correo -->
-                    <textarea name="message" rows="4" required placeholder="Ej: Necesito migrar publicaciones a productos, optimizar consultas lentas o un plugin personalizado..." class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brandAccent transition"></textarea>
+                    <textarea name="message" rows="4" required  data-i18n="form-placeholder" placeholder="Ej: Necesito migrar publicaciones a productos, optimizar consultas lentas o un plugin personalizado..." class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brandAccent transition"></textarea>
                 </div>
                 
                 <!-- Este campo oculto le dice a Formspree a dónde redirigir al usuario tras enviar el mensaje con éxito -->
                 <input type="hidden" name="_next" value="https://mmembrenoh23.github.io/ASYNCFORGE_LABS/">
 
-                <button type="submit" class="w-full bg-brandAccent hover:bg-blue-600 text-white font-bold py-3.5 rounded-xl text-sm transition shadow-lg shadow-blue-500/10">
+                <button type="submit" data-i18n="form-submit" class="w-full bg-brandAccent hover:bg-blue-600 text-white font-bold py-3.5 rounded-xl text-sm transition shadow-lg shadow-blue-500/10">
                     Enviar Propuesta de Proyecto
                 </button>
             </form>
@@ -270,9 +275,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-500">
+    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-500" data-i18n="footer-copy">
         <p>&copy; 2026 ASYNCFORGE_LABS. Todos los derechos reservados.</p>
     </footer>
-
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
