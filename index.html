@@ -38,11 +38,11 @@
     <link rel="canonical" href="https://mmembrenoh23.github.io/ASYNCFORGE_LABS/plugins.html">
 
     <!-- Favicon y Logo -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a data-i18n="nav-plugins" href="#productos" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Mis Plugins</a>
+                        <a data-i18n="nav-plugins" href="#featured-plugins" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Mis Plugins</a>
                         <a data-i18n="nav-services" href="#servicios" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Servicios</a>
                         <a data-i18n="nav-about" href="#sobre-mi" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Sobre Mí</a>
                         <a data-i18n="nav-quote" href="#contacto" class="bg-brandAccent hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-500/20">Cotizar Proyecto</a>
@@ -116,121 +116,28 @@
     </header>
 
     <!-- SECCIÓN DE PRODUCTOS (PLUGINS) -->
-    <section id="productos" class="py-20 bg-gray-900/40 border-t border-gray-800/60">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 data-i18n="section-products-title"  class="text-3xl font-bold text-white mb-4">Soluciones Disponibles para WooCommerce</h2>
-                <p data-i18n="section-products-desc"  class="text-gray-400 max-w-xl mx-auto">Herramientas profesionales optimizadas a nivel de base de datos para resolver problemas críticos de rendimiento.</p>
-            </div>
-
-            <!-- Grid de Plugins -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <section id="featured-plugins" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-10" id="featured-plugins-title">Featured Solutions</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" id="plugins-grid-home">
+                <!-- Plugin 1 -->
+                <div class="bg-gray-900 border border-gray-700 p-6 rounded-xl hover:border-brandSuccess transition">
+                    <h3 class="text-xl font-bold text-white mb-2">Bulk Importer Pro</h3>
+                    <p class="text-gray-400 mb-4">High-performance asynchronous data processing.</p>
+                    <a href="plugins.html" class="text-brandSuccess font-semibold">Learn more &rarr;</a>
+                </div>
                 
-                <!-- CARD: Bulk Importer Pro -->
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition flex flex-col h-full shadow-2xl">
-                    <!-- Banner del Plugin (Aquí va tu SVG de 448px de ancho) -->
-                    <div class="bg-gray-950 flex items-center justify-center p-4 border-b border-gray-800 h-40">
-                        <!-- Reemplaza esta caja por el código SVG de 448px que guardamos antes -->
-                        <div class="max-w-[448px] w-full text-center text-xs text-gray-500 border border-dashed border-gray-800 py-8 rounded-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 250" width="100%" height="100%">
-                                <!-- Fondo con degradado Pro -->
-                                <defs>
-                                  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#0a0f24"/>
-                                    <stop offset="100%" stop-color="#141d40"/>
-                                  </linearGradient>
-                                  <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stop-color="#3b82f6"/>
-                                    <stop offset="100%" stop-color="#10b981"/>
-                                  </linearGradient>
-                                </defs>
-                              
-                                <!-- Fondo -->
-                                <rect width="772" height="250" fill="url(#bg-gradient)"/>
-                                
-                                <!-- Detalles tecnológicos de fondo (Líneas de red atenuadas) -->
-                                <circle cx="600" cy="125" r="90" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
-                                <circle cx="600" cy="125" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
-                                <line x1="450" y1="125" x2="750" y2="125" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
-                              
-                                <!-- TEXTO PRINCIPAL (Izquierda) -->
-                                <g transform="translate(60, 0)">
-                                  <!-- Etapa / Categoría -->
-                                  <text x="0" y="80" fill="#3b82f6" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">WOOCOMMERCE EXTENSION</text>
-                                  
-                                  <!-- Nombre del Plugin -->
-                                  <text  x="0" y="130" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="0.5">
-                                    Bulk Importer <tspan fill="#10b981">Pro</tspan>
-                                  </text>
-                                  
-                                  <!-- Subtítulo / Propuesta de valor -->
-                                  <text x="0" y="165" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="400">
-                                    Asynchronous two-phase high-performance data engine.
-                                  </text>
-                                </g>
-                              
-                                <!-- ICONO / ELEMENTO GRÁFICO (Derecha) -->
-                                <g transform="translate(540, 55)">
-                                  <!-- Círculo de brillo trasero -->
-                                  <circle cx="60" cy="65" r="55" fill="#3b82f6" fill-opacity="0.15" filter="blur(10px)"/>
-                                  
-                                  <!-- Icono de Servidor / Base de datos masiva -->
-                                  <!-- Caja Superior (Fase 1) -->
-                                  <rect x="20" y="20" width="80" height="24" rx="4" fill="none" stroke="url(#accent-gradient)" stroke-width="3"/>
-                                  <circle cx="35" cy="32" r="4" fill="#3b82f6"/>
-                                  <line x1="55" y1="32" x2="85" y2="32" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
-                                  
-                                  <!-- Caja Media (Fase 2) -->
-                                  <rect x="20" y="52" width="80" height="24" rx="4" fill="none" stroke="url(#accent-gradient)" stroke-width="3"/>
-                                  <circle cx="35" cy="64" r="4" fill="#10b981"/>
-                                  <line x1="55" y1="64" x2="85" y2="64" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-                              
-                                  <!-- Caja Inferior (Logs / Engine) -->
-                                  <rect x="20" y="84" width="80" height="24" rx="4" fill="none" stroke="url(#accent-gradient)" stroke-width="3" opacity="0.7"/>
-                                  <circle cx="35" cy="96" r="4" fill="#64748b"/>
-                                  
-                                  <!-- Rayo de velocidad / Carga asíncrona que cruza el icono -->
-                                  <path d="M65,5 L40,65 L60,65 L50,120 L85,50 L65,50 Z" fill="#f59e0b" opacity="0.9"/>
-                                </g>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3  data-i18n="card-title-bulk" class="text-xl font-bold text-white">Bulk Importer Pro</h3>
-                            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-brandSuccess border border-emerald-500/20"  data-i18n="card-license" >Licencia Comercial</span>
-                        </div>
-                        <p  data-i18n="card-desc-bulk"  class="text-gray-400 text-sm mb-6 flex-grow">
-                            Motor de importación asíncrono estructurado secuencialmente en dos fases principales: Pre-loader global de atributos de catálogo y carga masiva optimizada. Evita de raíz la duplicación de slugs y la saturación de memoria en WooCommerce.
-                        </p>
-                        <div class="pt-4 border-t border-gray-800 flex items-center justify-between mt-auto">
-                            <div>
-                                <span  data-i18n="payment-one-time" class="text-xs text-gray-500 block">Pago único</span>
-                                <span class="text-2xl font-extrabold text-white">$39<span class="text-sm font-normal text-gray-400">.99</span></span>
-                            </div>
-                            <!-- URL de pago (Stripe, Lemon Squeezy, PayPal) -->
-                            <a  data-i18n="btn-buy" href="https://membreo.gumroad.com/l/gbxsu" target="_blank" class="bg-brandSuccess hover:bg-emerald-600 text-brandDark font-bold px-5 py-2.5 rounded-xl text-sm transition">
-                                Adquirir Plugin Pro
-                            </a>
-                        </div>
-                    </div>
+                <!-- Plugin 2 -->
+                <div class="bg-gray-900 border border-gray-700 p-6 rounded-xl hover:border-brandSuccess transition">
+                    <h3 class="text-xl font-bold text-white mb-2">Database Optimizer Pro</h3>
+                    <p class="text-gray-400 mb-4">Real-time database cleanup and indexing.</p>
+                    <a href="plugins.html" class="text-brandSuccess font-semibold">Learn more &rarr;</a>
                 </div>
-
-                <!-- CARD PROVISIONAL: Plugin Extra o Próximo Lanzamiento -->
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden p-6 flex flex-col h-full justify-between opacity-60 relative group">
-                    <div class="absolute inset-0 bg-gray-950/40 rounded-2xl flex items-center justify-center">
-                        <span class="bg-gray-800 border border-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider"  data-i18n="card-status-coming">Próximamente</span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-400 mb-2"  data-i18n="card-title-sync">Custom API Rest Sync</h3>
-                        <p class="text-gray-500 text-sm"  data-i18n="card-desc-sync">Sincronizador avanzado bidireccional entre inventarios externos y la base de datos nativa de WordPress de manera automatizada.</p>
-                    </div>
-                    <div class="pt-4 border-t border-gray-800 flex items-center justify-between mt-12">
-                        <span class="text-gray-600 font-bold">$ --.--</span>
-                        <button disabled class="bg-gray-800 text-gray-600 font-bold px-5 py-2.5 rounded-xl text-sm cursor-not-allowed"  data-i18n="btn-inactive">Inactivo</button>
-                    </div>
-                </div>
-
+            </div>
+            
+            <div class="mt-10">
+                <a href="plugins.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">View All Plugins</a>
             </div>
         </div>
     </section>
@@ -343,7 +250,8 @@
     <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-500" data-i18n="footer-copy">
         <p>&copy; 2026 ASYNCFORGE_LABS. Todos los derechos reservados.</p>
     </footer>
-<script src="js/i18n.js"></script>
-<script src="js/script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/renderPlugin.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

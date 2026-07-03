@@ -1,0 +1,30 @@
+#comparison-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+#comparison-section th {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+#comparison-section td {
+    padding: 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+
+#comparison-section tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Resaltado de la columna Pro */
+#comparison-section td:last-child {
+    font-weight: 700;
+    color: #2563eb; /* Azul corporativo */
+    background-color: #eff6ff;
+}

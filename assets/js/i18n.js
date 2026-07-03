@@ -6,7 +6,7 @@ const i18n = {
         "nav-quote": "Cotizar Proyecto",
         "lang-text": "English",
         "hero-badge": "Arquitectura y Optimización de Backend",
-        "hero-title": "Infraestructura Web de Alto Rendimiento y Plugins a Medida",
+        "hero-title": `Infraestructura Web de <span class='text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess'>Alto Rendimiento</span> y  Plugins a Medida `, 
         "hero-subtitle": "No diseño plantillas genéricas. Construyo motores de automatización robustos, optimizo bases de datos y desarrollo extensiones WooCommerce escalables para negocios que no pueden permitirse fallas.",
         "hero-cta": "Hablemos de tu Proyecto",
         "btn-explore": "Explorar Plugins Pro",
@@ -41,7 +41,38 @@ const i18n = {
         "form-details": "Detalles del Requerimiento",
         "form-placeholder": "Ej: Necesito migrar publicaciones a productos, optimizar consultas lentas o un plugin personalizado...",
         "form-submit": "Enviar Propuesta de Proyecto",
-        "footer-copy": "© 2026 ASYNCFORGE_LABS. Todos los derechos reservados."
+        "footer-copy": "© 2026 ASYNCFORGE_LABS. Todos los derechos reservados.",
+        "plugins": {
+            "intro": "En Async Forge Labs, creemos que la eficiencia del back-end es la base del crecimiento.",
+            "plugin_table_title": `Ingeniería de  <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess">rendimiento</span> para comercio electrónico escalable.`,
+            "bulk_importer": {
+                "title": "Bulk Importer Pro",
+                "subtitle": "Procesamiento de datos asíncrono de alto rendimiento",
+                "description": "Deja de esperar procesos de importación que congelan tu servidor. Bulk Importer Pro aprovecha un motor de colas avanzado para procesar miles de productos en segundo plano.",
+                "highlights": ["Integración con Action Scheduler", "Transacciones de base de datos atómicas", "Transmisión eficiente de memoria", "Monitoreo del progreso en tiempo real"]
+            },
+            "db_optimizer": {
+                "title": "Database Optimizer Pro",
+                "subtitle": "Indexación inteligente y limpieza en tiempo real",
+                "description": "Una base de datos rápida es el motor invisible detrás de cada venta exitosa. Database Optimizer Pro actúa como un monitor constante para tu infraestructura de WooCommerce.",
+                "highlights": ["Auto-indexación inteligente", "Desfragmentación de tablas sin bloqueo", "Limpieza de ciclo de vida"]
+            },
+            "comparison_table": {
+              "headers": ["Característica", "Bulk (Free)", "Bulk (Pro)", "Optimizer (Free)", "Optimizer (Pro)"],
+              "rows": [
+                { "feature": "Importación Masiva", "bf": "✅", "bp": "✅", "of": "❌", "op": "❌" },
+                { "feature": "Procesamiento Asíncrono", "bf": "❌", "bp": "✅", "of": "❌", "op": "✅" },
+                { "feature": "Optimización Tablas", "bf": "❌", "bp": "❌", "of": "✅", "op": "✅" },
+                { "feature": "Transacciones Atómicas", "bf": "❌", "bp": "✅", "of": "❌", "op": "✅" }
+              ]
+            }
+          },
+        "hero-plugin-title":`Ingeniería de la Suite de Rendimiento <span class='text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess'>Asíncrono</span> `,
+        "hero-plugin-subtitle":"Extensiones diseñadas para escalabilidad, integridad de datos y excelencia en el backend.",
+        "hero-plugin-badge":"AsyncForge Labs Presentación",
+        "hero-2":`El <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess">desafío</span> de la escalabilidad`,
+        "hero-desc-2":"Porque las tiendas WooCommerce típicas fallan al superar los 10,000 productos",
+        
     },
     "en": {
         "nav-plugins": "My Plugins",
@@ -50,7 +81,7 @@ const i18n = {
         "nav-quote": "Quote Project",
         "lang-text": "Spanish",
         "hero-badge": "Backend Architecture & Optimization",
-        "hero-title": "High-Performance Web Infrastructure & Custom Plugins",
+        "hero-title": "<span class='text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess'>High-Performance</span> Web Infrastructure & Custom Plugins",
         "hero-subtitle": "I don't design generic templates. I build robust automation engines, optimize databases, and develop scalable WooCommerce extensions for businesses that cannot afford failure.",
         "hero-cta": "Let's talk about your Project",
         "btn-explore": "Explore Pro Plugins",
@@ -85,6 +116,38 @@ const i18n = {
         "form-details": "Requirement Details",
         "form-placeholder": "Ex: I need to migrate posts to products, optimize slow queries, or a custom plugin...",
         "form-submit": "Send Project Proposal",
-        "footer-copy": "© 2026 ASYNCFORGE_LABS. All rights reserved."
-    }
+        "footer-copy": "© 2026 ASYNCFORGE_LABS. All rights reserved.",
+        "plugins": {
+            "plugin_table_title":"Engineering <span class='text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess'>Performance</span> for Scalable E-commerce. ",
+            "intro": "At Async Forge Labs, we believe that back-end efficiency is the foundation of growth.",
+            "bulk_importer": {
+                    "title": "Bulk Importer Pro",
+                    "subtitle": "High-Performance Asynchronous Data Processing",
+                    "description": "Stop waiting for import processes that freeze your server. Bulk Importer Pro leverages an advanced queuing engine to process thousands of products in the background.",
+                    "highlights": ["Action Scheduler integration", "Atomic database transactions", "Memory-efficient streaming", "Real-time Progress Monitoring"]
+                },
+                "db_optimizer": {
+                    "title": "Database Optimizer Pro",
+                    "subtitle": "Intelligent Indexing and Real-Time Cleanup",
+                    "description": "A fast database is the invisible engine behind every successful sale. Database Optimizer Pro acts as a constant monitor for your WooCommerce infrastructure.",
+                    "highlights": ["Intelligent auto-indexing", "Non-blocking table defragmentation", "Lifecycle cleanup"]
+                },
+            "comparison_table": {
+              "headers": ["Feature", "Free", "Pro"],
+              "rows": [
+                {"name": "Async Processing", "free": "Basic", "pro": "Unlimited"},
+                {"name": "Indexing Strategy", "free": "Standard", "pro": "AI-Driven"},
+                {"name": "Database Cleanup", "free": "Manual", "pro": "Automated"},
+                {"name": "Support", "free": "Community", "pro": "Priority"},
+                {"name": "Custom Hooks/API", "free": "No", "pro": "Full Access"}
+              ]
+            }
+          },
+        "hero-plugin-title":`Engineering the <span class='text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess'>Async</span> Perfomance Suite`,
+        "hero-plugin-subtitle":"A technical overview of high-performance WooCommerce extensions built for scalability, data integrity, and backend excellence.",
+        "hero-plugin-badge":"AsyncForge Labs Presentation",
+        "hero-2":`The Scaling <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandAccent to-brandSuccess">Challenge</span>`,
+        "hero-desc-2":"Why typical WooCommerce stores fail at 10,000+ products",
+    },
+    
 };
