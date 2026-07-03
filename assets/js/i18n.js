@@ -133,13 +133,12 @@ const i18n = {
                     "highlights": ["Intelligent auto-indexing", "Non-blocking table defragmentation", "Lifecycle cleanup"]
                 },
             "comparison_table": {
-              "headers": ["Feature", "Free", "Pro"],
+              "headers": ["Feature", "Bulk (Free)", "Bulk (Pro)", "Optimizer (Free)", "Optimizer (Pro)"],
               "rows": [
-                {"name": "Async Processing", "free": "Basic", "pro": "Unlimited"},
-                {"name": "Indexing Strategy", "free": "Standard", "pro": "AI-Driven"},
-                {"name": "Database Cleanup", "free": "Manual", "pro": "Automated"},
-                {"name": "Support", "free": "Community", "pro": "Priority"},
-                {"name": "Custom Hooks/API", "free": "No", "pro": "Full Access"}
+                { "feature": "Bulk Import", "bf": "✅", "bp": "✅", "of": "❌", "op": "❌" },
+                { "feature": "Async Processing", "bf": "❌", "bp": "✅", "of": "❌", "op": "✅" },
+                { "feature": "Table Optimization", "bf": "❌", "bp": "❌", "of": "✅", "op": "✅" },
+                { "feature": "Atomic Transactions", "bf": "❌", "bp": "✅", "of": "❌", "op": "✅" }
               ]
             }
           },
